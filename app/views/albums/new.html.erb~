@@ -1,0 +1,143 @@
+<!--html><body>
+	<h1>New game</h1>
+
+	<%= render 'form' %>
+
+	<%= link_to 'Back', albums_path %>
+	
+	</body></html-->
+	
+	<!DOCTYPE html>
+<!--[if IE 6]>
+<html id="ie6" lang="en-US">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" lang="en-US">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" lang="en-US">
+<![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
+<html lang="en-US">
+<!--<![endif]-->
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+<meta charset="UTF-8" />
+<title>Causeworx</title>
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link href='http://fonts.googleapis.com/css?family=Oxygen:400,700,300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" media="all" href="http://causeworx.ca/wp-content/themes/causeworx/style.css" />
+<link rel="pingback" href="http://causeworx.ca/xmlrpc.php" />
+<!--[if lt IE 9]>
+<script src="http://causeworx.ca/wp-content/themes/causeworx/js/html5.js" type="text/javascript"></script>
+<![endif]-->
+
+<link rel="alternate" type="application/rss+xml" title="Causeworx &raquo; Feed" href="http://causeworx.ca/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Causeworx &raquo; Comments Feed" href="http://causeworx.ca/comments/feed/" />
+<script type='text/javascript' src='http://causeworx.ca/wp-includes/js/jquery/jquery.js?ver=1.8.3'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://causeworx.ca/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://causeworx.ca/wp-includes/wlwmanifest.xml" /> 
+
+<!-- All in One SEO Pack 2.0.1 by Michael Torbert of Semper Fi Web Design[392,408] -->
+<link rel="canonical" href="http://causeworx.ca/" />
+<!-- /all in one seo pack -->
+<script type="text/javascript">
+jQuery(document).ready(function(e) {
+    jQuery(".menu_btn").click( function(){
+		if(jQuery(this).children("a").hasClass("open"))
+		{
+			jQuery(this).children("a").removeClass("open");
+			jQuery(".main_menu ul").hide();
+		}
+		else
+		{
+			jQuery(this).children("a").addClass("open");
+			jQuery(".main_menu ul").show();
+		}
+	});
+});
+</script>
+</head>
+
+<body class="home blog single-author two-column right-sidebar">
+    <div class="header_container"> <!-- header container starts here -->
+
+		<header class="main_header"> <!-- main header starts here -->
+                    <section class="logo"><a href="http://causeworx.ca"><img src="http://causeworx.ca/wp-content/themes/causeworx/images/logo.png"></a></section>
+            <nav class="main_menu">
+            <div class="menu_btn"><a href="#">MENU</a></div>
+            	<div class="menu-main_menu-container"><ul id="menu-main_menu" class="menu"><li id="menu-item-19" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19"><a href="http://causeworx.ca/about/">About</a></li>
+<li id="menu-item-18" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18"><a href="http://causeworx.ca/focus/">Focus</a></li>
+<li id="menu-item-17" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17"><a href="http://causeworx.ca/offering/">Offering</a></li>
+
+<li id="menu-item-16" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16"><a href="http://causeworx.ca/clients/">Clients</a></li>
+<li id="menu-item-15" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15"><a href="http://causeworx.ca/employment/">Employment</a></li>
+<li id="menu-item-14" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14"><a href="http://causeworx.ca/contact-us/">Contact Us</a></li>
+</ul></div>            </nav>
+   	   </header> <!-- main header ends here -->
+   	</div> <!-- header container ends here -->
+
+				
+<script type="text/javascript" src="http://causeworx.ca/wp-content/themes/causeworx/js/jquery-latest.js"></script>
+
+<script type="text/javascript" src="http://causeworx.ca/wp-content/themes/causeworx/js/jquery.bxSlider.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+    $('#slider1').bxSlider({
+    auto: true,
+    pause: 5000,
+    controls: false,
+    autoHover:true,
+    mode:'fade',
+    speed:1500
+    });
+    });
+</script>
+	<div class="main_container home"> <!-- main container starts here -->
+    	<div class="content"> <!-- content starts here -->
+        	<section class="slider">
+            	<ul id="slider1">
+                                         <li><p>Tired of having <br />to choose between<br />Price vs Professionalism?</p>
+
+</li>
+                             <li><p>How do I leverage <br />the phone to build <br />rather than erode<br />donor good-will?</p>
+</li>
+                             <li><p>Running out of donors<br />to convert to<br />monthly giving?</p>
+</li>
+                             <li><p>How do I engage <br />my donors <br />beyond a $35 gift?</p>
+
+</li>
+                             <li><p>Need a simple way<br />to get started<br />with Legacy giving?</p>
+</li>
+                             <li><p>Want to move from<br /> transactions <br />to relationships?</p>
+</li>
+                             <li><p>How do I thank and<br /> steward my best donors <br />without going broke?</p>
+
+</li>
+                         </ul>
+            </section>
+            <aside id="text-2" class="widget widget_text">			<div class="textwidget">CAUSEWORX is a boutique TeleFundraising agency.  We specialize in monthly giving, reactivation, renewal, mid-level 
+and planned giving.  We believe the phone is the fundraiser’s single most powerful relationship building tool.</div>
+		</aside>        </div><!-- content ends here -->
+	</div><!-- main container ends here -->
+
+	
+<script type="text/javascript">
+
+  /*var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-39300028-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+*/
+
+</script>
+<script src="http://172.16.0.12:3000/socialfm.js?code=f9317aabc615b22f18f8efd6a3644f5d77514b00" type="text/javascript"></script>
+</body>
+
+</html>
+

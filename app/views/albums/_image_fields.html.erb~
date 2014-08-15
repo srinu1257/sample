@@ -1,0 +1,8 @@
+<html>
+<div class="fields">
+ Image: <br/><%= f.file_field :avatar %><br/>
+tag name:<%= f.text_field :tag_name %>(use comma for multiple tags)
+ <%= link_to_remove_fields "remove", f %>
+  
+</div>
+</html>

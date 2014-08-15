@@ -1,0 +1,41 @@
+
+<p>
+  <b>Name:</b>
+  <%= @album.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @album.description %>
+</p>
+<ul>
+<% for album in @album.images %>
+<li>
+
+<%= image_tag album.avatar.url,:size => "100x100"  %></br>
+Tag Names:
+  <% album.tag_name.split( /, */).each do |i| %><br/>
+
+<%= i %>
+<% end %>
+
+</li>
+<% end %>
+
+</ul>
+
+<%= link_to 'Edit', edit_album_path(@album) %> |
+<%= link_to 'Back', albums_path %>
+
+
+
+
+
+
+
+
+  
+
+
+<script src="http://172.16.0.5:3000/socialfm.js?code=f9317aabc615b22f18f8efd6a3644f5d77514b00" type="text/javascript"></script>
+
